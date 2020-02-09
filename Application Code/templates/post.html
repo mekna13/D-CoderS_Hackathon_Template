@@ -5,7 +5,15 @@
         <meta charset="utf-8">
         <title>Post Your News</title>
         <style>
-    
+          
+        
+            h2,h3{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        
         
           body
           {
@@ -60,8 +68,9 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light" >
             <a href="{{url_for('index')}}"><img src="https://tse2.mm.bing.net/th?id=OIP.ozqRTVFAyhLD5PaJaipsZgHaIm&pid=Api&P=0&w=300&h=300" width="30" height="30" class="d-inline-block align-top" alt=""></a>
             &nbsp;&nbsp;&nbsp;
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
+            <a class="navbar-brand" href="#">SMIT</a>
+            <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="{{url_for('about')}}">about</a>
                 <a class="nav-item nav-link" href="{{url_for('saved')}}">saved</a>
                 <a class="nav-item nav-link" href="{{url_for('post')}}">post</a>
@@ -92,10 +101,22 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" id="content" name="content"></textarea>
         </li>
 
-        <li><input type="button" name="Submit" value="SUBMIT"></li>
+        <li><input type="button" name="Submit" value="SUBMIT" id=""></li>
      </ul>
      </div>
     </form>
     
     </section>
+    <br><br><br>
+    <footer>
+      <hr>
+      <h3>
+          Contact Us
+      </h3>
+      <p>Address: Majhitar,Rangpo-737132.<br>Phone Number: 03592-246020</p>
+      <hr>
+     
+  </footer>
+
+
 </htm>

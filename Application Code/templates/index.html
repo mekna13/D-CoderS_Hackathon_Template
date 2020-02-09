@@ -7,6 +7,14 @@
        
         <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
         <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.css')}}">
+        <style>
+          h3{
+              text-align: center;
+          }
+          p{
+              text-align: center;
+          }
+      </style>
         
     </head>
 
@@ -15,9 +23,9 @@
 
             <a href="{{url_for('index')}}"><img src="https://tse2.mm.bing.net/th?id=OIP.ozqRTVFAyhLD5PaJaipsZgHaIm&pid=Api&P=0&w=300&h=300" width="30" height="30" class="d-inline-block align-top" alt=""></a>
             &nbsp;&nbsp;&nbsp;
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-            
+            <a class="navbar-brand" href="#">SMIT</a>
+            <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="{{url_for('about')}}">about</a>
                 <a class="nav-item nav-link" href="{{url_for('saved')}}">saved</a>
                 <a class="nav-item nav-link" href="{{url_for('post')}}">post</a>
@@ -33,44 +41,35 @@
 
 
     <section class="container">
-        <div class="mt-5 mb-4">
+        <div class="mt-1 mb-4">
          <h2>THE LATEST <small class="text-muted">TOP HEADLINES</small></h2>
         </div>
     </section>
     <section class="container">
         <div class="row">
             <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/techa.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">It is the technical event which is going to be to held on 18th of march.It also includes different types of technical event which is a source for all the student to learn and experience</p>
+                </div>
+              </div>
             </div>
             <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/hack.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Hackathon hosted by the Decoders Club was held on 9th of Feburary 2020. It proved to be a successfull event and many students particapipated</p>
+                </div>
+              </div>
             </div>
             <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/k1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">It is the biggest cultural fest of three days which includes different form of performances in different fields.It is a platform for all the students to showcase their talents.It is to be held from 28th feb to 1st march 2020</p>
+                </div>
+              </div>
             </div>
         </div>
 
@@ -85,93 +84,46 @@
      class="container">
         <div class="row">
             <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/alumni.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">The Global Alumni Meet 2020 is going to be held on 15th feb,saturday,3pm at Sikkim Manipal Institute of Technology.</p>
+                </div>
+              </div>
             </div>
             <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/echeleon.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Every department have their own fest and this was ECE's departmental fest. They had a retro themed fest and we were blown away by the performances , especially vocal peformances made us reminisence the old times</p>
+                </div>
+              </div>
             </div>
             <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="static/aies.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">A few students from SMIT had attended the IAESTE national conference which helps them to get paid internships </p>
+                </div>
+              </div>
             </div>
         </div>
 
 
     </section>
+    <br><br><br>
 
-    <!--The third set of news cards---->
-
-    <section class="container">
-        <div class="mt-5 mb-4">
-            <h2>NOTICES <small class="text-muted">KEEP YOURSELF INFORMED</small></h2>
-        </div>
-   </section>
-   <section
-     class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
+    <footer class="container" >
+      <hr>
+      <h3>
+          Contact Us
+      </h3>
+      <p>Address: Majhitar,Rangpo-737132.<br>Phone Number: 03592-246020</p>
+      <hr>
+     
+  </footer>
 
 
-    </section>
-    <footer>
-
-    </footer>
 
 
     </htm>
