@@ -4,14 +4,98 @@
 
         <meta charset="utf-8">
         <title>Post Your News</title>
+        <style>
+    
+        
+          body
+          {
+            background-color: #fff;
+           
+          }
+          .box{
+            width: 320px;
+            height:auto;
+            padding: 60px 40px;
+            border-radius: 10px;
+            margin: auto;
+          }
+          ul.list
+          {
+            list-style-type: none;
+            text-align: center;
+          }
+          ul.list li
+          {
+            width: 250px;
+          }
+          ul.list li input
+          {
+            width:250px;
+            text-align: center;
+            padding: 9px 0px;
+            border-radius: 7px;
+            margin-bottom: 12px;
+          }
+          ul.list li input[type="button"]
+          {
+              background-color: #4690fb;
+          }
+         .form-control
+         {
+            width:250px;
+            text-align: center;
+            padding: 7px 0px;
+            border-radius: 7px;
+            margin-bottom: 12px;
+         }
+    
+          </style>
        
-        <link rel="stylesheet" href="{{url_for('static',filename='pmain.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
         <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.css')}}">
         
     </head>
 
     <header>
-    <!----Put the navbar here-->
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <a href="{{url_for('index')}}"><img src="https://tse2.mm.bing.net/th?id=OIP.ozqRTVFAyhLD5PaJaipsZgHaIm&pid=Api&P=0&w=300&h=300" width="30" height="30" class="d-inline-block align-top" alt=""></a>
+            &nbsp;&nbsp;&nbsp;
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="{{url_for('about')}}">about</a>
+                <a class="nav-item nav-link" href="{{url_for('saved')}}">saved</a>
+                <a class="nav-item nav-link" href="{{url_for('post')}}">post</a>
+              </div>
+            </div>
+          </nav>
+          </nav>
     </header>
+    <section class="container">
+        
+        <blockquote class="blockquote text-center">
+        <div class="mt-5 mb-4">
+            <h2>POST STORIES HERE <small class="text-muted">WHATS HAPPENING ON CAMPUS</small></h2>
+        </div>
+        </blockquote>
+    <HR>
+        <div class="row">
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
+    <form name="addForm" id="addForm" method="POST" action="{{url_for('addpost')}}">
+      <ul class="list">
+        <li>POST ARTICLE</li><br>
+        <li><input type="text" name="title" placeholder="Enter title name" id="title"></li>
+        <li><input type="text" name="author" placeholder="Enter the name of the author" id="author"></li>
+        <li>
+            <label for="exampleFormControlTextarea1">Type Article</label><br>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" id="content" name="content"></textarea>
+        </li>
 
+        <li><input type="button" name="Submit" value="SUBMIT"></li>
+     </ul>
+     </div>
+    </form>
+    
+    </section>
+</htm>
